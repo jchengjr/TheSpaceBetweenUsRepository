@@ -21,6 +21,9 @@ public class MouseLook : MonoBehaviour
     int codeNum;
     string key;
 
+    public TMP_Text keyPuzzleText;
+    public TMP_Text safeText;
+
     bool computerFound = false;
 
     Transform playerBody;
@@ -129,15 +132,19 @@ public class MouseLook : MonoBehaviour
             }
             else if(hit.collider.CompareTag("Key"))
             {
+                keyPuzzleText.gameObject.SetActive(true);
                 KeyPuzzle.keyFound = true;
             }
             else if(hit.collider.CompareTag("Safe"))
             {
+                safeText.gameObject.SetActive(true);
                 KeyPuzzle.safeFound = true;
             }
             else
             {
                 computerObjectText.gameObject.SetActive(false);
+                keyPuzzleText.gameObject.SetActive(false);
+                safeText.gameObject.SetActive(false);
                 computerFound = false;
                 KeyPuzzle.keyFound = false;
                 KeyPuzzle.safeFound = false;
