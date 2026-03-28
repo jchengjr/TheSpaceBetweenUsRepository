@@ -2,8 +2,11 @@ using UnityEngine;
 
 public class KeyPuzzle : MonoBehaviour
 {
-    public static bool keyHeld = false;
+    public static bool keyFound = false;
+    public static bool safeFound = false;
+    public GameObject keyFoundPrefab;
     public GameObject keyHeldPrefab;
+    bool keyHeld;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -14,14 +17,23 @@ public class KeyPuzzle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(keyHeld)
-        {
-            keyHeldPrefab.SetActive(true);
-        }
+        KeyInteraction();
     }
 
     void KeyInteraction()
     {
-        
+        if(!keyHeld && keyFound && Input.GetButtonDown("Fire1"))
+        {
+            // pickup key
+            keyFoundPrefab.SetActive(false);
+            keyHeldPrefab.SetActive(true);
+            keyHeld = true;
+        }
+        else if(keyHeld && safeFound && Input.GetButtonDown("Fire1"))
+        {
+            // use key
+            keyHeldPrefab.SetActive(false);
+            keyHeld = false;
+        }
     }
 }

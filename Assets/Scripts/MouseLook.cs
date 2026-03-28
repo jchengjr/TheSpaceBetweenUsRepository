@@ -127,10 +127,20 @@ public class MouseLook : MonoBehaviour
                 computerObjectText.gameObject.SetActive(true);
                 computerFound = true;
             }
+            else if(hit.collider.CompareTag("Key"))
+            {
+                KeyPuzzle.keyFound = true;
+            }
+            else if(hit.collider.CompareTag("Safe"))
+            {
+                KeyPuzzle.safeFound = true;
+            }
             else
             {
                 computerObjectText.gameObject.SetActive(false);
                 computerFound = false;
+                KeyPuzzle.keyFound = false;
+                KeyPuzzle.safeFound = false;
             }
         }
     }
