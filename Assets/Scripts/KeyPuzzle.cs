@@ -34,6 +34,7 @@ public class KeyPuzzle : MonoBehaviour
             // use key
             keyHeldPrefab.SetActive(false);
             keyHeld = false;
+            SafeBehavior.isOpened = true;
         }
     }
 }
