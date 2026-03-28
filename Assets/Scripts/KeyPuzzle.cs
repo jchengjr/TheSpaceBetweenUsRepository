@@ -6,7 +6,7 @@ public class KeyPuzzle : MonoBehaviour
     public static bool safeFound = false;
     public GameObject keyFoundPrefab;
     public GameObject keyHeldPrefab;
-    bool keyHeld;
+    bool keyHeld = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
