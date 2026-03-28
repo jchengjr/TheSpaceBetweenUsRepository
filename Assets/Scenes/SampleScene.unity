@@ -1870,6 +1870,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 458864, guid: 6c7bfc57a0f70db46b9b83dddca510e1, type: 3}
   m_PrefabInstance: {fileID: 1638840511}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &637128740 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8854235963185915216, guid: 18f73c661478e224da5580c9876c903a, type: 3}
+  m_PrefabInstance: {fileID: 1963941106}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &644545178
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5940,6 +5945,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Safe
       objectReference: {fileID: 0}
+    - target: {fileID: 8854235963185915216, guid: 18f73c661478e224da5580c9876c903a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854235963185915216, guid: 18f73c661478e224da5580c9876c903a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854235963185915216, guid: 18f73c661478e224da5580c9876c903a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5947,6 +5964,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7753220991480805037, guid: 18f73c661478e224da5580c9876c903a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1963941108}
+    - targetCorrespondingSourceObject: {fileID: 7753220991480805037, guid: 18f73c661478e224da5580c9876c903a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1963941109}
   m_SourcePrefab: {fileID: 100100000, guid: 18f73c661478e224da5580c9876c903a, type: 3}
 --- !u!1 &1963941107 stripped
 GameObject:
@@ -5974,6 +5994,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1963941109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963941107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a38e3caefdfac6d47bb19a6099f4230d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  door: {fileID: 637128740}
+  doorSpeed: 50
 --- !u!1 &1993680244
 GameObject:
   m_ObjectHideFlags: 0
