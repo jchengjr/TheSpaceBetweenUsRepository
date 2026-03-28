@@ -59,6 +59,7 @@ public class MouseLook : MonoBehaviour
                 && (Input.inputString.CompareTo("z") < 0 || Input.inputString.CompareTo("z") == 0))
             {
                 key = Input.inputString.ToUpper();
+                Debug.Log(key);
                 codeNum++;
             }
         }
