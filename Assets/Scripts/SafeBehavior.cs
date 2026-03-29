@@ -7,13 +7,7 @@ public class SafeBehavior : MonoBehaviour
     public Transform door;
     public float doorSpeed = 30;
     bool doorRotate = true;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
+    
     // Update is called once per frame
     void Update()
     {
