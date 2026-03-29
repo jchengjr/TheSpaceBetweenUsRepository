@@ -160,6 +160,10 @@ public class MouseLook : MonoBehaviour
                 keyPuzzleText.gameObject.SetActive(true);
                 KeyPuzzle.keyFound = true;
             }
+            else if(hit.collider.CompareTag("Book") && Input.GetMouseButtonDown(0))
+            {
+                BookBehavior.isTouched = true;
+            }
             else if(hit.collider.CompareTag("Safe"))
             {
                 safeText.gameObject.SetActive(true);

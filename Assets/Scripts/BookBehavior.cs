@@ -11,11 +11,13 @@ public class BookBehavior : MonoBehaviour
     {
         if(isTouched && doorRotate)
         {
+            Debug.Log("go");
             transform.Rotate(Vector3.forward, doorSpeed * Time.deltaTime);
             // Debug.Log(transform.rotation.x);
         }
         if(transform.rotation.x >= 0.8)
         {
+            Debug.Log("stop");
             doorRotate = false;
         }
     }

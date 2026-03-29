@@ -1068,6 +1068,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpecialBook
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe2ea1d63e7080f4493d5a662c1e506b, type: 3}
+      propertyPath: m_TagString
+      value: Book
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1075,6 +1079,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fe2ea1d63e7080f4493d5a662c1e506b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3916808105533132699}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fe2ea1d63e7080f4493d5a662c1e506b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2368055282707028274}
   m_SourcePrefab: {fileID: 100100000, guid: fe2ea1d63e7080f4493d5a662c1e506b, type: 3}
 --- !u!4 &2567671383847618735 stripped
 Transform:
@@ -1107,6 +1114,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.44507194, y: 0.6458766, z: 0.15214472}
   m_Center: {x: 0.013979594, y: 0.022076845, z: 0.010092765}
+--- !u!114 &2368055282707028274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2948137193716847125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3613120c73f58f468358697128fe201, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BookBehavior
+  doorSpeed: 30
 --- !u!1001 &3097530252834907181
 PrefabInstance:
   m_ObjectHideFlags: 0

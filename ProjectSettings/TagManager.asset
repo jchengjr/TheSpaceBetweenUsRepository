@@ -9,6 +9,7 @@ TagManager:
   - Safe
   - FlashDrive
   - EndGameComputer
+  - Book
   layers:
   - Default
   - TransparentFX
