@@ -19,7 +19,7 @@ public class LevelManager : MonoBehaviour
         drivesCollected++;
     }
 
-    private void EndGame()
+    public void EndGame()
     {
         if (drivesCollected >= drivesToCollect)
         {
