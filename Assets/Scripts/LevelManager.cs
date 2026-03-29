@@ -39,5 +39,6 @@ public class LevelManager : MonoBehaviour
     private void Defeat()
     {
         computerText.text = "I'm sorry...";
+        MouseLook.canMove = false;
     }
 }
