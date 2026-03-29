@@ -1483,7 +1483,6 @@ Transform:
   - {fileID: 880576076}
   - {fileID: 794304592}
   - {fileID: 1965351947}
-  - {fileID: 945082772}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &347274081 stripped
@@ -3347,7 +3346,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 335896166}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3427235009233483375, guid: fddace2299775264dbab845219f4ba16, type: 3}
       propertyPath: m_Name
@@ -3367,7 +3366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6960310298054070787, guid: fddace2299775264dbab845219f4ba16, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 6960310298054070787, guid: fddace2299775264dbab845219f4ba16, type: 3}
       propertyPath: m_LocalRotation.x
@@ -3375,7 +3374,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6960310298054070787, guid: fddace2299775264dbab845219f4ba16, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 6960310298054070787, guid: fddace2299775264dbab845219f4ba16, type: 3}
       propertyPath: m_LocalRotation.z
@@ -3398,11 +3397,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fddace2299775264dbab845219f4ba16, type: 3}
---- !u!4 &945082772 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6960310298054070787, guid: fddace2299775264dbab845219f4ba16, type: 3}
-  m_PrefabInstance: {fileID: 945082771}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &946185728
 GameObject:
   m_ObjectHideFlags: 0
@@ -3568,6 +3562,7 @@ GameObject:
   - component: {fileID: 967053420}
   - component: {fileID: 967053425}
   - component: {fileID: 967053424}
+  - component: {fileID: 967053426}
   m_Layer: 0
   m_Name: TempPlayer
   m_TagString: Untagged
@@ -3712,6 +3707,23 @@ MonoBehaviour:
   jumpHeight: 0
   gravity: 9.81
   airControl: 10
+--- !u!114 &967053426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967053419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97d8f24399f9af3448286b1e67e8074f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Crouching
+  virtualCamera: {fileID: 330585543}
+  player: {fileID: 967053419}
+  crouchHeight: 1
+  crouchSpeed: 5
+  standSpeed: 10
 --- !u!1 &968228546
 GameObject:
   m_ObjectHideFlags: 0
@@ -8189,6 +8201,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 410087041}
+  - {fileID: 945082771}
   - {fileID: 832575519}
   - {fileID: 967053423}
   - {fileID: 1433866632}
