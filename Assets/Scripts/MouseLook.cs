@@ -24,6 +24,8 @@ public class MouseLook : MonoBehaviour
     public AudioClip correctSFX;
     public AudioClip incorrectSFX;
 
+    public DoorBehavior theDoor;
+
     AudioSource audioSource;
     bool screenFirstClicked = false;
 
@@ -85,6 +87,7 @@ public class MouseLook : MonoBehaviour
                 {
                     // Debug.Log("Code cracked");
                     audioSource.clip = correctSFX;
+                    theDoor.OpenDoor();
                 }
                 else
                 {

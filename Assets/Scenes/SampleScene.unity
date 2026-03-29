@@ -1215,6 +1215,7 @@ MonoBehaviour:
   code4: {fileID: 1557624457}
   correctSFX: {fileID: 8300000, guid: ad4f7a1c195e840459a5e40ca312085c, type: 3}
   incorrectSFX: {fileID: 8300000, guid: 9c28c4f6696b84740948698271aea159, type: 3}
+  theDoor: {fileID: 1050916478}
   keyPuzzleText: {fileID: 1818635310}
   safeText: {fileID: 1733644835}
 --- !u!114 &330585549
@@ -4016,6 +4017,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 820591594dcfa124d8a9c5d016d6c22c, type: 3}
+--- !u!114 &1050916478 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 169875659770652451, guid: 820591594dcfa124d8a9c5d016d6c22c, type: 3}
+  m_PrefabInstance: {fileID: 1050916477}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0816e687c6c92d641ab32a08ff997442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorBehavior
 --- !u!1 &1084039023
 GameObject:
   m_ObjectHideFlags: 0
