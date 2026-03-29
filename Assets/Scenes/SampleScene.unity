@@ -1065,6 +1065,7 @@ GameObject:
   - component: {fileID: 330585548}
   - component: {fileID: 330585549}
   - component: {fileID: 330585550}
+  - component: {fileID: 330585551}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1329,6 +1330,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &330585551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca011a0aad085bb4c866a574721f4dad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlashDriveRaycast
+  rayCastRange: 3
 --- !u!1 &332878645
 GameObject:
   m_ObjectHideFlags: 0
@@ -2475,6 +2489,7 @@ GameObject:
   - component: {fileID: 677088631}
   - component: {fileID: 677088633}
   - component: {fileID: 677088632}
+  - component: {fileID: 677088634}
   m_Layer: 0
   m_Name: EndGameComputer
   m_TagString: EndGameComputer
@@ -2531,6 +2546,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ComputerBehavior
   levelManager: {fileID: 0}
+--- !u!114 &677088634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677088630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d6c73487c5c8b4bbf6b9be009c7e48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ComputerBehavior
+  levelManager: {fileID: 1378209358}
 --- !u!1001 &697167071
 PrefabInstance:
   m_ObjectHideFlags: 0
