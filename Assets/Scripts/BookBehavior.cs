@@ -1,10 +1,8 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class SafeBehavior : MonoBehaviour
+public class BookBehavior : MonoBehaviour
 {
-    public static bool isOpened = false;
-    public Transform door;
+    public static bool isTouched = false;
     public float doorSpeed = 30;
     bool doorRotate = true;
 
@@ -17,12 +15,12 @@ public class SafeBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isOpened && doorRotate)
+        if(isTouched && doorRotate)
         {
-            door.Rotate(Vector3.up, doorSpeed * Time.deltaTime);
-            // Debug.Log(door.rotation.y);
+            transform.Rotate(Vector3.forward, doorSpeed * Time.deltaTime);
+            // Debug.Log(transform.rotation.x);
         }
-        if(door.rotation.y >= 0.8)
+        if(transform.rotation.x >= 0.8)
         {
             doorRotate = false;
         }
