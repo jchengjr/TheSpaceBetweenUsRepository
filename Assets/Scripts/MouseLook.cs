@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEditor;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 
 public class MouseLook : MonoBehaviour
 {
@@ -20,6 +21,9 @@ public class MouseLook : MonoBehaviour
     public TMP_Text code4;
     int codeNum;
     string key;
+    AudioSource audioSource;
+    bool cracked = false;
+    bool screenFirstClicked = false;
 
     public TMP_Text keyPuzzleText;
     public TMP_Text safeText;
@@ -39,11 +43,19 @@ public class MouseLook : MonoBehaviour
         codeNum = 0;
 
         key = "_";
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(cracked && audioSource.time > 0.7f){
+            audioSource.Stop();
+        }
+
+        cracked = false;
+
         Move();
 
         ComputerPuzzle();
@@ -65,6 +77,27 @@ public class MouseLook : MonoBehaviour
                 Debug.Log(key);
                 codeNum++;
             }
+            else if(Input.GetButtonDown("Fire1"))
+            {
+                if(!screenFirstClicked)
+                {
+                    screenFirstClicked = true;
+                    return;
+                }
+
+                if(code1.text.Equals("H") && code2.text.Equals("E") && code3.text.Equals("L") && code4.text.Equals("P"))
+                {
+                    // Debug.Log("Code cracked");
+                    audioSource.Play();
+                    cracked = true;
+                }
+                else
+                {
+                    audioSource.time = 1.4f;
+                    audioSource.Play();
+                    cracked = false;
+                }
+            }
         }
     
         switch(codeNum)
@@ -81,12 +114,6 @@ public class MouseLook : MonoBehaviour
             case 4:
                 code4.SetText(key);
                 break;
-        }
-
-        if(code1.text.Equals("H") && code2.text.Equals("E") && code3.text.Equals("L") && code4.text.Equals("P") 
-            && Input.GetButtonDown("Fire1"))
-        {
-            Debug.Log("Code cracked");
         }
     }
 
@@ -158,6 +185,7 @@ public class MouseLook : MonoBehaviour
         {
             computerPuzzle.SetActive(true);
             canMove = false;
+            // screenFirstClicked = true;
         }
 
         if(computerPuzzle.activeSelf)
