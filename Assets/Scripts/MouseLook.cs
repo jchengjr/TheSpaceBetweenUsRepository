@@ -21,8 +21,10 @@ public class MouseLook : MonoBehaviour
     public TMP_Text code4;
     int codeNum;
     string key;
+    public AudioClip correctSFX;
+    public AudioClip incorrectSFX;
+
     AudioSource audioSource;
-    bool cracked = false;
     bool screenFirstClicked = false;
 
     public TMP_Text keyPuzzleText;
@@ -50,12 +52,6 @@ public class MouseLook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(cracked && audioSource.time > 0.7f){
-            audioSource.Stop();
-        }
-
-        cracked = false;
-
         Move();
 
         ComputerPuzzle();
@@ -88,15 +84,14 @@ public class MouseLook : MonoBehaviour
                 if(code1.text.Equals("H") && code2.text.Equals("E") && code3.text.Equals("L") && code4.text.Equals("P"))
                 {
                     // Debug.Log("Code cracked");
-                    audioSource.Play();
-                    cracked = true;
+                    audioSource.clip = correctSFX;
                 }
                 else
                 {
-                    audioSource.time = 1.4f;
-                    audioSource.Play();
-                    cracked = false;
+                    audioSource.clip = incorrectSFX;
                 }
+
+                audioSource.Play();
             }
         }
     

@@ -928,6 +928,8 @@ MonoBehaviour:
   code2: {fileID: 997309467}
   code3: {fileID: 377725473}
   code4: {fileID: 1557624457}
+  correctSFX: {fileID: 8300000, guid: ad4f7a1c195e840459a5e40ca312085c, type: 3}
+  incorrectSFX: {fileID: 8300000, guid: 9c28c4f6696b84740948698271aea159, type: 3}
   keyPuzzleText: {fileID: 1818635310}
   safeText: {fileID: 1733644835}
 --- !u!114 &330585549
@@ -955,7 +957,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: d258dcef21bdd8644b2cb78f72b78c8b, type: 3}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
