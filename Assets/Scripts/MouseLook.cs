@@ -83,7 +83,7 @@ public class MouseLook : MonoBehaviour
                 break;
         }
 
-        if(code1.text.Equals("C") && code2.text.Equals("O") && code3.text.Equals("D") && code4.text.Equals("E") 
+        if(code1.text.Equals("H") && code2.text.Equals("E") && code3.text.Equals("L") && code4.text.Equals("P") 
             && Input.GetButtonDown("Fire1"))
         {
             Debug.Log("Code cracked");
