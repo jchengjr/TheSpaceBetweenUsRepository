@@ -28,7 +28,7 @@ public class FlashDriveRaycast : MonoBehaviour
         if (target.CompareTag("FlashDrive"))
         {
             target.GetComponent<FlashDriveBehavior>().Collect();
-        } else if (target.CompareTag("Computer"))
+        } else if (target.CompareTag("EndGameComputer"))
         {
             target.GetComponent<ComputerBehavior>().Activate();
         }

@@ -10,7 +10,7 @@ public class LevelManager : MonoBehaviour
     private GameObject laserParticles;
 
     [SerializeField]
-    private TextMeshPro computerText;
+    private TMP_Text computerText;
 
     private int drivesCollected = 0;
 
