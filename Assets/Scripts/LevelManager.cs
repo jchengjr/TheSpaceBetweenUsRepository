@@ -14,6 +14,11 @@ public class LevelManager : MonoBehaviour
 
     private int drivesCollected = 0;
 
+    public void CollectDrive()
+    {
+        drivesCollected++;
+    }
+
     private void EndGame()
     {
         if (drivesCollected >= drivesToCollect)
