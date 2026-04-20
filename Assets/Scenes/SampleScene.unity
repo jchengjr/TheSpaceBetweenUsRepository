@@ -2223,6 +2223,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1423884014}
     m_Modifications:
+    - target: {fileID: -8776346647741293685, guid: d7247fbf34577504ea6a977d5e7a22ca, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3ebc960d9ea9b96429ad80b0d36ae895, type: 2}
     - target: {fileID: -8679921383154817045, guid: d7247fbf34577504ea6a977d5e7a22ca, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2263,9 +2267,93 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6799344937064087837, guid: d7247fbf34577504ea6a977d5e7a22ca, type: 3}
+      propertyPath: m_Name
+      value: crumple
+      objectReference: {fileID: 0}
+    - target: {fileID: -6275440029877517363, guid: d7247fbf34577504ea6a977d5e7a22ca, type: 3}
+      propertyPath: m_Name
+      value: box
+      objectReference: {fileID: 0}
+    - target: {fileID: -5715638825569562705, guid: d7247fbf34577504ea6a977d5e7a22ca, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 391e240e325d4294aa234fb98edf45b8, type: 2}
+    - target: {fileID: -5538422274243331007, guid: d7247fbf34577504ea6a977d5e7a22ca, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6db97e2adc05968408ee6738d724695e, type: 2}
+    - target: {fileID: -4573788162603579708, guid: d7247fbf34577504ea6a977d5e7a22ca, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 643581d010cb1104d83fb85b0bc9420d, type: 2}
+    - target: {fileID: -4469232674037411358, guid: d7247fbf34577504ea6a977d5e7a22ca, type: 3}
+      propertyPath: m_Name
+      value: paper
+      objectReference: {fileID: 0}
+    - target: {fileID: -2867023516130459191, guid: d7247fbf34577504ea6a977d5e7a22ca, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6db97e2adc05968408ee6738d724695e, type: 2}
+    - target: {fileID: -2695306825870520044, guid: d7247fbf34577504ea6a977d5e7a22ca, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 643581d010cb1104d83fb85b0bc9420d, type: 2}
+    - target: {fileID: -1807180913839326752, guid: d7247fbf34577504ea6a977d5e7a22ca, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 391e240e325d4294aa234fb98edf45b8, type: 2}
+    - target: {fileID: -1639240297934529813, guid: d7247fbf34577504ea6a977d5e7a22ca, type: 3}
+      propertyPath: m_Name
+      value: box
+      objectReference: {fileID: 0}
+    - target: {fileID: 487402980491518079, guid: d7247fbf34577504ea6a977d5e7a22ca, type: 3}
+      propertyPath: m_Name
+      value: paper
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d7247fbf34577504ea6a977d5e7a22ca, type: 3}
       propertyPath: m_Name
       value: model 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4638103702953456007, guid: d7247fbf34577504ea6a977d5e7a22ca, type: 3}
+      propertyPath: m_Name
+      value: cardboard
+      objectReference: {fileID: 0}
+    - target: {fileID: 5390376165837144519, guid: d7247fbf34577504ea6a977d5e7a22ca, type: 3}
+      propertyPath: m_Name
+      value: roll
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503485785505519564, guid: d7247fbf34577504ea6a977d5e7a22ca, type: 3}
+      propertyPath: m_Name
+      value: can
+      objectReference: {fileID: 0}
+    - target: {fileID: 5799860578763830224, guid: d7247fbf34577504ea6a977d5e7a22ca, type: 3}
+      propertyPath: m_Name
+      value: crumple
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954699391464761350, guid: d7247fbf34577504ea6a977d5e7a22ca, type: 3}
+      propertyPath: m_Name
+      value: paper
+      objectReference: {fileID: 0}
+    - target: {fileID: 7158407522628928220, guid: d7247fbf34577504ea6a977d5e7a22ca, type: 3}
+      propertyPath: m_Name
+      value: bottle1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253334769680050207, guid: d7247fbf34577504ea6a977d5e7a22ca, type: 3}
+      propertyPath: m_Name
+      value: bin
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179698542211869747, guid: d7247fbf34577504ea6a977d5e7a22ca, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ef9986126b3eb9b41a82af0433e66d4f, type: 2}
+    - target: {fileID: 8390721280013965104, guid: d7247fbf34577504ea6a977d5e7a22ca, type: 3}
+      propertyPath: m_Name
+      value: can
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409075425716258608, guid: d7247fbf34577504ea6a977d5e7a22ca, type: 3}
+      propertyPath: m_Name
+      value: bottle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
