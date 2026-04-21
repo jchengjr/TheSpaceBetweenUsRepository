@@ -12,6 +12,9 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private TMP_Text computerText;
 
+    [SerializeField]
+    private GameObject NPC;
+
     private int drivesCollected = 0;
 
     public void CollectDrive()
@@ -34,6 +37,7 @@ public class LevelManager : MonoBehaviour
     {
         laserParticles.SetActive(true);
         computerText.text = "Congratulations.";
+        NPC.SetActive(true);
     }
 
     private void Defeat()
