@@ -9,12 +9,11 @@ public class MenuManager : MonoBehaviour
     {
         if (runText)
         {
-            runText.text = "Number of Playthroughs: " + PlayerPrefs.GetFloat("RunValue", 0);
+            runText.text = "Playtime: " + PlayerPrefs.GetFloat("Playtime", 0);
         }
     }
     public void StartGame()
     {
-        PlayerPrefs.SetFloat("RunValue", PlayerPrefs.GetFloat("RunValue", 0) + 1);
         SceneManager.LoadScene("SampleScene");
     }
 }

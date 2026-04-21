@@ -15,7 +15,19 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private GameObject NPC;
 
-    private int drivesCollected = 0;
+    private int drivesCollected;
+
+    private float timer = 0;
+
+    public void Start()
+    {
+        timer = 0f;
+    }
+
+    public void Update()
+    {
+        timer += Time.deltaTime;
+    }
 
     public void CollectDrive()
     {
@@ -31,6 +43,7 @@ public class LevelManager : MonoBehaviour
         {
             Defeat();
         }
+        PlayerPrefs.SetFloat("Playtime", timer + PlayerPrefs.GetFloat("Playtime", 0));
     }
 
     private void Victory()

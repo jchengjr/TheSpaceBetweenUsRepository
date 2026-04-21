@@ -1,6 +1,7 @@
 using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class NPCBehavior : MonoBehaviour
 {
@@ -82,7 +83,8 @@ public class NPCBehavior : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            // scene loading to text level goes here.
+            // scene loading to text level goes here. (changed to menu screen for scope)
+            SceneManager.LoadScene("MainMenu");
         }
     }
 }
