@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
         {
             moveDirection = input;
 
-            if(Input.GetButton("Jump"))
+            if(Input.GetKeyDown(KeyCode.Space))
             {
                 moveDirection.y = Mathf.Sqrt(2 * jumpHeight * gravity);
             }

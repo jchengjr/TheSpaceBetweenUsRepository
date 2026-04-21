@@ -4088,7 +4088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   speed: 10
-  jumpHeight: 0
+  jumpHeight: 0.1
   gravity: 9.81
   airControl: 10
 --- !u!114 &967053426
