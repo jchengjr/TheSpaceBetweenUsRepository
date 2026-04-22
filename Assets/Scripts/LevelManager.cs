@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
+    public TMP_Text driveNumText;
+
     [SerializeField]
     private int drivesToCollect = 3;
 
@@ -32,6 +34,7 @@ public class LevelManager : MonoBehaviour
     public void CollectDrive()
     {
         drivesCollected++;
+        UpdateDriveText();
     }
 
     public void EndGame()
@@ -57,5 +60,10 @@ public class LevelManager : MonoBehaviour
     {
         computerText.text = "I'm sorry...";
         MouseLook.canMove = false;
+    }
+
+    void UpdateDriveText()
+    {
+        driveNumText.text = "Drives Collected:" + drivesCollected.ToString();
     }
 }

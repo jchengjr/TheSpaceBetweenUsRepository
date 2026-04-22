@@ -7,6 +7,8 @@ using Unity.VisualScripting;
 
 public class MouseLook : MonoBehaviour
 {
+    public GameObject solvedPanel;
+
     public float mouseSensitivity = 100f;
     public float pitchMin = -90f;
     public float pitchMax = 90f;
@@ -87,6 +89,7 @@ public class MouseLook : MonoBehaviour
                 {
                     // Debug.Log("Code cracked");
                     audioSource.clip = correctSFX;
+                    solvedPanel.SetActive(true);
                     theDoor.OpenDoor();
                 }
                 else

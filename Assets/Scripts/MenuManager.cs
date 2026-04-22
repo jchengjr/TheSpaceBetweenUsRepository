@@ -5,6 +5,8 @@ using TMPro;
 public class MenuManager : MonoBehaviour
 {
     public TMP_Text runText;
+    public GameObject overview;
+    bool readingOverview = false;
     public void Start()
     {
         if (runText)
@@ -14,6 +16,22 @@ public class MenuManager : MonoBehaviour
     }
     public void StartGame()
     {
-        SceneManager.LoadScene("SampleScene");
+        if(!readingOverview)
+            SceneManager.LoadScene("SampleScene");
+    }
+
+    public void OverView()
+    {
+        readingOverview = true;
+        overview.SetActive(true);
+    }
+
+    void Update()
+    {
+        if(Input.GetButtonDown("Fire2") && readingOverview)
+        {
+            readingOverview = false;
+            overview.SetActive(false);
+        }
     }
 }
