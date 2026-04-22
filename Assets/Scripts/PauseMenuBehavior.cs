@@ -43,7 +43,7 @@ public class PauseMenuBehavior : MonoBehaviour
         Time.timeScale = 0f;
         pauseMenuPanel.SetActive(true);
         Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public void RestartGame()
