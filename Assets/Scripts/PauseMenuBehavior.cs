@@ -34,6 +34,7 @@ public class PauseMenuBehavior : MonoBehaviour
         Time.timeScale = 1f;
         pauseMenuPanel.SetActive(false);
         Cursor.visible = false;
+        ToggleStickyCursor();
         Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -43,6 +44,7 @@ public class PauseMenuBehavior : MonoBehaviour
         Time.timeScale = 0f;
         pauseMenuPanel.SetActive(true);
         Cursor.visible = true;
+        ToggleStickyCursor();
         Cursor.lockState = CursorLockMode.None;
     }
 
@@ -58,5 +60,12 @@ public class PauseMenuBehavior : MonoBehaviour
         // Debug.Log("Main menu");
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
+    }
+
+    private void ToggleStickyCursor()
+    {
+#if !UNITY_EDITOR && UNITY_WEBGL
+        WebGLInput.stickyCursorLock = isGamePaused;
+#endif
     }
 }

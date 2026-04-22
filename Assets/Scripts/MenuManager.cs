@@ -9,6 +9,11 @@ public class MenuManager : MonoBehaviour
     bool readingOverview = false;
     public void Start()
     {
+#if !UNITY_EDITOR && UNITY_WEBGL
+        WebGLInput.stickyCursorLock = false;
+#endif
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         if (runText)
         {
             runText.text = "Playtime: " + PlayerPrefs.GetFloat("Playtime", 0);
